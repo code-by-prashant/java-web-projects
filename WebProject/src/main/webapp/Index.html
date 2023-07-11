@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+div {
+	width: 300px;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+form {
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	width: 150px;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+h2, p {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h2>Welcome to the Home Page</h2>
+	<div>
+		<p>You can perform various operations:</p>
+		<form action="InsertRecordPage.html">
+			<input type="submit" value="INSERT">
+		</form>
+		<form action="ReadRecord">
+			<input type="submit" value="READ">
+		</form>
+		<form action="UpdateRecordPage.html">
+			<input type="submit" value="UPDATE">
+		</form>
+		<form action="DeleteRecordPage.html">
+			<input type="submit" value="DELETE">
+		</form>
+	</div>
+</body>
+</html>

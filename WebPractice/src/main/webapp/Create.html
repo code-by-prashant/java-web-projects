@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>CREATE</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: Arial, sans-serif;
+
+		}
+
+		.container {
+			width: 400px;
+			padding: 40px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="number"],
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			font-size: 14px;
+			margin-bottom: 12px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 8px 16px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+			margin: 0 auto; /* Center the button horizontally */
+        	display: block; /* Make the button a block element */
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Welcome to Web App!</h1>
+		<form action="Create" method="post">
+			<table>
+				<tr>
+					<td><label for="id">ID:</label></td>
+					<td><input type="number" id="id" name="id" required></td>
+				</tr>
+				<tr>
+					<td><label for="name">Name:</label></td>
+					<td><input type="text" id="name" name="name" required></td>
+				</tr>
+				<tr>
+					<td><label for="age">Age:</label></td>
+					<td><input type="number" id="age" name="age"></td>
+				</tr>
+				<tr>
+					<td><label for="designation">Designation:</label></td>
+					<td><input type="text" id="designation" name="designation"></td>
+				</tr>
+				<tr>
+					<td><label for="salary">Salary:</label></td>
+					<td><input type="number" id="salary" name="salary"></td>
+				</tr>
+			</table>
+			<input type="submit" name="submit">
+		</form>
+	</div>
+</body>
+
+</html>
